@@ -1,0 +1,46 @@
+<html>
+
+ <head>
+  <title>Display properties</title>
+  <style>
+   span{
+      display:block;
+    }
+    .pinline{
+      display:inline;
+      color:red;
+   }
+   .container{
+     display:flex;
+     flex-wrap:wrap;
+     background-color:powderblue;
+     <!--width:50%;-->
+   
+   }
+   .item{
+     border:2px solid black;
+     padding:2px;
+     margin:5px;
+     
+   }
+  </style>
+ </head>
+
+ <body>
+  <h1> Example of display:block</h1>
+  <span>This is an span tag</span><span>where elements are going to be block by setting display:block</span>
+   
+  <h1> Example of display:inline</h1>
+  <div>Cascading Style Sheets is a style sheet language used for describing the 
+     presentation of a document written in a markup language such as HTML. <p class="pinline">
+     CSS is a cornerstone technology of the World Wide Web.</p>
+  </div>
+ 
+  <h1> Example of display:flex</h1>
+  <div class="container">
+     <div class="item">item1</div>
+     <div class="item">item2</div>
+   </div>
+ </body>
+
+</html>

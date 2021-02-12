@@ -1,0 +1,61 @@
+<html>
+
+ <head>
+  <title>position property</title>
+  <style>
+   .container{
+     background-color:yellow;
+   }
+
+  .box{
+   display:inline-block;
+   border:2px solid black;
+   width:150px;
+   height:150px;
+   margin:2px;
+   }
+
+   .b2{
+     position:absolute;
+     left:34px;
+     top:34px;
+
+   }
+  .b5{
+      position:relative;
+      left:40px;
+      top:34px;
+    }
+    .b8{
+      position:static;
+    }
+  </style>
+ </head>
+
+ <body>
+   <h1>position absolute example</h2>
+   <div class="container">
+     <div class="box b1" >BOX1</div>
+     <div class="box b2" >BOX2</div>
+     <div class="box b3" >BOX3</div>
+
+   </div>
+
+   <h1>position relative example</h2>
+   <div class="container">
+     <div class="box b4" >BOX4</div>
+     <div class="box b5" >BOX5</div>
+     <div class="box b6" >BOX6</div>
+
+   </div>
+  
+    <h1>position static example</h2>
+   <div class="container">
+     <div class="box b7" >BOX7</div>
+     <div class="box b8" >BOX8</div>
+     <div class="box b9" >BOX9</div>
+
+   </div>
+ </body>
+
+</html>

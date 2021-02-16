@@ -1,0 +1,303 @@
+<html>
+<head>
+ <title>Gmail Login Page</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <style lang="sass">
+  *{box-sizing: border-box;}
+
+
+ .container{
+   display:flex;
+   justify-content:center;
+   width: 100%;
+   height: 100%;
+  }
+  .f1,.f2,.f3,.f4{
+   width: 100%;
+   height: 30%;
+   display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:center;
+   
+   }
+
+  .c-login-box{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    height: 100%
+  }
+  
+
+  @media screen and (min-width: 600px) {
+    *{box-sizing: border-box;}
+    .c-login-box {
+        border-radius: 15px;
+        border: 1px solid rgb(218, 220, 224);
+        margin:auto;
+        margin-top:6%;
+        width: 470px; 
+        height:500px;
+    }
+     .f1{
+   display:block;
+   width: 100%;
+   height: 30%;
+   <!---display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:center;-->
+   
+   }
+   .f2{
+    display:block;
+    width: 93%;
+   height: 80%;
+   display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:center;
+   margin-left:50px;
+   }
+   .f3{
+   display:block;
+   width: 104%;
+   height: 30%;
+   display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:center;
+   
+   }
+  
+   .f4{
+   display:inine;
+   width: 104%;
+   height: 30%;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   justify-content:center;
+  
+   }
+   .img1{
+      margin-top:7%;
+      margin-left:43%;
+    }
+   .p1{
+      margin-left:208px;
+      margin-top:5%;
+      font-size:23px; 
+      font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+      color:black;
+   }
+  .p2{
+      font-size:17px;
+      color:grey;
+      font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+      margin-left:175px;
+      margin-top:2%;
+      tex-align:center;
+    }
+   .i1{
+ 
+   padding-left: 12px;
+   width:88%;
+   height:60px;
+   border: solid 1px #c2c4c6;
+   border-radius: 5px;
+   margin:auto;
+   
+  }
+   .a1{
+    color:blue;
+    font-size:14px;
+    text-decoration:none;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    font-weight: 550;
+  }
+   .p3{
+  font-size:17px;
+  color:grey;
+  margin:auto;
+ }
+  .a2{
+  color:blue;
+  font-size:14px;
+  text-decoration:none;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+  font-weight: 550;
+  display:block;
+   }
+  
+  .a3{
+   color:blue;
+   font-size:14px;
+   text-decoration:none;
+   font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+   font-weight: 550;
+   margin-left:-63%;
+   position:absolute;
+   left:99.5%;
+   
+  }
+   .button{
+  height:35px;
+  width:75px;
+  background-color:#0099cc;
+  border-color:#0099cc;
+  color:white;
+  float:right;
+  position:absolute;
+  right:36%;
+  }
+  }
+  @media screen and (min-width: 300px) and (max-width:600px) {
+      
+    .f1{
+   width: 100%;
+   height: 30%;
+   display:block;
+   }
+
+    .f2{
+    display:block;
+    width: 100%;
+   height: 80%;
+    display:flex;
+   flex-direction:column;
+   flex-wrap:wrap;
+   justify-content:center;
+   margin-left:37px;
+   }
+
+   .f3{
+   width: 80%;
+   height: 60%;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   margin:auto;
+   
+   }
+   .f4{
+   width: 80%;
+   height: 60%;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   margin:auto;
+   }
+
+   .img1{
+      margin-top:4%;
+      margin-left:40%;
+      width:75;
+      heigth:25;
+    }
+   .p1{
+      margin-left:40%;
+      margin-top:4%;
+      font-size:24px; 
+      font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+      color:black;}
+   .p2{
+      font-size:17px;
+      font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
+      margin-left:36%;
+      margin-top:2%;
+      tex-align:center;
+     }
+   .i1{
+   padding-left: 12px;
+   width:87%;
+   height:57px;
+   border: solid 1px #c2c4c6;
+   border-radius: 5px;
+   margin:auto;
+  }
+    .a1{
+    color:blue;
+    font-size:14px;
+    text-decoration:none;
+    font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+    font-weight: 550;
+  }
+  .p3{
+  display:inline;
+  font-size:17px;
+  color:grey;
+  float:left;
+  margin:auto;
+  
+ }
+  .a2{
+  display:inline;
+  color:blue;
+  font-size:15px;
+  text-decoration:none;
+  font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+  }
+  .a3{
+   display:inline;
+   color:blue;
+   font-size:14px;
+   text-decoration:none;
+   font-family: roboto,'Noto Sans Myanmar UI',arial,sans-serif;
+   font-weight: 550;
+   position:absolute;
+   left:10%;
+   right:10%;
+  
+  
+  }
+   .button{
+  display:inline;
+  height:35px;
+  width:75px;
+  background-color:#0099cc;
+  border-color:#0099cc;
+  color:white;
+  float:right;
+   position:absolute;
+   right:6%;
+  }
+}
+ </style>
+</head>
+<body>
+ <div class="container">
+   <div class="c-login-box">
+
+     <div class="f1">
+       <div><img src="C:\Users\Admin\OneDrive\Desktop\Training\gmail login page\logo.png"  class="img1" width="79" height="27" ></div>
+       <div class="p1">Sign in</div>
+       <div class="p2">Continue to Gmail</div>
+     <div>
+    <br>
+    
+    <div class="f2">
+     <div><div><input placeholder="Enter mail or phone" type="mail" name="name" class="i1"></div><br>
+     <div><a href="#" class="a1">Forgot email?</a></div></div>
+    </div>
+    <br>
+
+    <div class="f3">
+     <div class="p3">Not your computer? Use Guest mode to sign in privately.
+     <div style="display:inline;"><a href="#" class="a2">Learn more</a></div></div>
+    </div>
+    <br>
+    <br>
+    <div class="f4">
+     <div style="display:inline">
+     <a href="#" class="a3">Create account</a>
+     <input type="submit" class="button" value="Next"/>
+     </div>
+    </div>
+
+  </div>
+ </div>
+</body>
+</html>
